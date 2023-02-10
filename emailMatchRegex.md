@@ -15,9 +15,7 @@ A regex like this will be used to validate an email address. The numerous letter
 - [Grouping Constructs](#grouping-constructs)
 - [Bracket Expressions](#bracket-expressions)
 - [Character Classes](#character-classes)
-- [The OR Operator](#the-or-operator)
 - [Flags](#flags)
-- [Character Escapes](#character-escapes)
 
 ## Regex Components
 
@@ -27,15 +25,17 @@ A regex like this will be used to validate an email address. The numerous letter
 
 - Dollar: The $ sign appears opposite of the caret, at the end of the regex. This is to match the final character of the string.
 
-- 
-
 ### Quantifiers
 
 - Quantifiers can appear as either a + or a * symbol let us know how many times a character can be used. The + sign means that it can be used once more, while the * means that it can be used 0 more times, thus making that character type optional.
 
+- The occurance of [a-z0-9_\.-]+ means that one of those characters needs to appear at least once to be a valid email.
+
 ### Grouping Constructs
 
 - Grouping Constructs such as "Matched Subexpressions" are used to match character combinations within strings.
+
+- Anything set within () will be considered a single group of characters.
 
 ### Bracket Expressions 
 
